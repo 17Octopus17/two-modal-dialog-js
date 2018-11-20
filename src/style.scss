@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+  }
+  &__close {
+      float: left;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+    }
+  &__close:hover {
+      transform: scale(1.1);
+  }
+  &__warning {
+      margin-left: 6rem;
+      width: 150px;
+  }
+  &__question {
+      font-family: "Lato";
+      margin-left: 25px;
+  }
+  &__cancel {
+      cursor: pointer;
+      margin-left: 80px;
+      float: left;
+      padding: 10px;
+      border-radius: 5px;
+      width: 90px; 
+  }
+  &__uninstall {
+      margin-right: 80px;
+      float: right;
+      cursor: pointer;
+      background-color: red;
+      border: 1px solid red;
+      padding: 10px;
+      border-radius: 5px;
+      width: 90px;
+  }
+  &__smile {
+     margin-left: 6rem;
+     width: 150px;
+  }
+  &__install {
+    margin-right: 80px;
+    float: right;
+    cursor: pointer;
+    background-color: green;
+    border: 1px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    width: 90px;
+  }
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}

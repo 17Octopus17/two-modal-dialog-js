@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
+    <title>Module Dialog</title>
+  </head>
+  <body>
+    <button class="run" data-button="modal-uninstall">run pop-up</button>
+    <button class="run" data-button="modal-install">run second pop-up</button>
+    <div class="modal" data-content="modal-uninstall">
+      <div class="modal__content">
+        <img
+          src="images/icon-popup-close.svg"
+          class="modal__close"
+          alt="close"
+        />
+        <img
+          src="images/icon-warning_notify-red.svg"
+          class="modal__warning"
+          alt="warning"
+        />
+        <h1 class="modal__question">
+          Are you sure you want to uninstall the Shazam app
+        </h1>
+        <button class="modal__cancel">Cancel</button>
+        <button class="modal__uninstall">Uninstall</button>
+      </div>
+    </div>
+    <div class="modal" data-content="modal-install">
+      <div class="modal__content">
+        <img
+          src="images/icon-popup-close.svg"
+          class="modal__close"
+          alt="close"
+        />
+        <img src="images/smile.png" class="modal__smile" alt="smile" />
+        <h1 class="modal__question">
+          Are you sure you want to install the Shazam app?
+        </h1>
+        <button class="modal__cancel">Cancel</button>
+        <button class="modal__install">install</button>
+      </div>
+    </div>
+  </body>
+</html>
